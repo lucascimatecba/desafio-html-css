@@ -18,7 +18,8 @@ body {
 }
 .header {
     display: flex;
-    height: max-content;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .redirecionar-header {
     color: #1351d8;
@@ -30,6 +31,7 @@ body {
 .footer {
     display: flex;
     background-color: #1b357e;
+    flex-direction: row;
     align-items: center;
 }
 .footer h3 {
