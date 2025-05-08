@@ -4,39 +4,40 @@
     padding: 0;
 }
 body {
-    height: 100vh;
     box-sizing: border-box;
 }
 .container{
     display: flex;
-    margin: 0.5% 12.5%;
+    margin: 0 8%;
+    padding: 1%;
     flex-direction: column;
+    gap: 20px;
 }
 .container p {
     text-align: center;
-    padding-top: 0.5%;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 .redirecionar-header {
     color: #1351d8;
     text-decoration: none;
-    justify-content: space-between;
+    align-items: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
 .footer {
     display: flex;
-    background-color: #1b357e;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
+    padding: 1.1%;
+    background-color: #1b357e;
 }
-.footer h3 {
+.footer h2 {
     margin: 0.5%;
     font-family: "Montserrat", sans-serif;
     font-weight: 450;
