@@ -17,9 +17,25 @@
             <a href="contato.html">Contato</a>
         </nav>
     </header>
-    <main>
+    <main class="container-contato">
         <img src="./img/xls 2.2 diesel.jpg">
-        <h1>Sobre Você:</h1>
+        <div class="form-contato">
+            <h1>Sobre Você:</h1>
+            <form class="form-contato-campos">
+                <input type="text" placeholder="NOME*" required>
+                <input type="email" placeholder="EMAIL*" required>
+                <input type="number" placeholder="CPF*" required>
+                <input type="number" placeholder="TELEFONE*" required>
+                <select name="TIPO DE CONTATO" id="TIPO DE CONTATO" required>
+                    <option class="form-contato-campos-placeholder-options" value="" disabled selected>TIPO DE CONTATO*</option>
+                    <option value="elogio">ELOGIO</option>
+                    <option value="reclamacao">RECLAMAÇÃO</option>
+                    <option value="solicitacao">SOLICITAÇÃO</option>
+                </select>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="MENSAGEM*" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-redes">

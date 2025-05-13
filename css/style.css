@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --cor-primaria: #1351d8;
     --cor-secundaria: #1b357e;
     --cor-terciaria: #FDFDFF;
     --cor-hover: #559CAD;
     --fonte-montserrat: "Montserrat", sans-serif;
+    --fonte-roboto: "Roboto", sans-serif;
 }
 
 * {
@@ -52,14 +53,15 @@
 }
 .container-img {
     width: 100%;
+    border: none;
+    border-radius: 12px;
 }
 .video-lancamento {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 1%;
+    padding: 1% 7% 1% 7%;
     gap: 15px;
-    padding-top: 0.5%;
 }
 .video-lancamento p {
     font-family: var(--fonte-montserrat);
@@ -67,7 +69,50 @@
 }
 .video-lancamento iframe {
     width: 100%;
-    height: 700px;
+    height: 900px;
+    border: none;
+    border-radius: 12px;
+}
+.container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+    padding-bottom: 12%;
+}
+.container-contato img {
+    width: 18%;
+    height: 40%;
+}
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 20%;
+}
+.form-contato h1 {
+    font-family: var(--fonte-montserrat);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 4%;
+}
+.form-contato-campos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 4% 0 4%;
+    font-family: var(--fonte-montserrat);
+}
+.form-contato-campos input,
+.form-contato-campos select,
+.form-contato-campos textarea {
+    font-family: var(--fonte-montserrat);
+    padding: 1.5%;
+    border-radius: 5px;
+    border: 1px solid var(--cor-secundaria);
+    color: #707070;
 }
 .footer {
     width: 100%;
@@ -88,7 +133,7 @@
     left: 50%;
     transform: translateX(-50%);
     color: var(--cor-terciaria);
-    font-family: var(--fonte-montserrat);
+    font-family: var(--fonte-roboto);
     text-align: center;
 }
 .footer-img {
