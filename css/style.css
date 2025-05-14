@@ -3,7 +3,7 @@
     --cor-primaria: #1351d8;
     --cor-secundaria: #1b357e;
     --cor-terciaria: #FDFDFF;
-    --cor-hover: #559CAD;
+    --cor-hover: #468dde;
     --fonte-montserrat: "Montserrat", sans-serif;
     --fonte-roboto: "Roboto", sans-serif;
 }
@@ -13,6 +13,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* CABEÇALHO ------------------------------------------------------------- */
+
 .header {
     width: 100%;
     display: flex;
@@ -30,21 +33,26 @@
     text-decoration: none;
     font-family: var(--fonte-montserrat);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .nav-header a:hover {
     color: var(--cor-hover);
+    transform: scale(1.05);
 }
 .header-img {
     position: absolute;
     left: 20px;
 }
+
+/* INDEX ----------------------------------------------------------------- */
+
 .container{
     display: flex;
     margin: 0 8%;
     padding: 1%;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 .container p {
     text-align: center;
@@ -56,6 +64,9 @@
     border: none;
     border-radius: 12px;
 }
+
+/* LANÇAMENTO ------------------------------------------------------------- */
+
 .video-lancamento {
     display: flex;
     flex-direction: column;
@@ -65,7 +76,7 @@
 }
 .video-lancamento p {
     font-family: var(--fonte-montserrat);
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 .video-lancamento iframe {
     width: 100%;
@@ -73,6 +84,51 @@
     border: none;
     border-radius: 12px;
 }
+.galeria-lancamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.galeria-carro-1, 
+.galeria-carro-2, 
+.galeria-carro-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-montserrat);
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+table {
+    text-align: center;
+    padding: 4%;
+}
+button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 12px 20px;
+    border: 1.5px solid #000000;
+    border-radius: 12px;
+    font-family: var(--fonte-montserrat);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.05);
+}
+.galeria-butao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 1% 0;
+}
+
+/* CONTATO ------------------------------------------------------------------------ */
+
 .container-contato {
     display: flex;
     justify-content: center;
@@ -93,7 +149,7 @@
 }
 .form-contato h1 {
     font-family: var(--fonte-montserrat);
-    font-size: 16px;
+    font-size: 1.1rem;
     font-weight: 500;
     text-align: left;
     padding-left: 4%;
@@ -114,6 +170,9 @@
     border: 1px solid var(--cor-secundaria);
     color: #707070;
 }
+
+/* RODAPÉ ------------------------------------------------------------------------------- */
+
 .footer {
     width: 100%;
     display: flex;
@@ -135,6 +194,7 @@
     color: var(--cor-terciaria);
     font-family: var(--fonte-roboto);
     text-align: center;
+    font-size: 1rem;
 }
 .footer-img {
     position: absolute;
@@ -144,5 +204,56 @@
     font-family: var(--fonte-montserrat);
     font-weight: 450;
     color: var(--cor-terciaria);
-    font-size: 15px;
+    font-size: 1rem;
+}
+
+/* RESPONSIVIDADE HEADER ------------------------------------------------------------------ */
+
+@media (max-width: 768px) {
+    header img {
+        width: 35%;
+    }
+    .header-img {
+        left: 10px;
+    }
+    .nav-header {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+    .nav-header a {
+        
+    }
+}
+
+/* RESPONSIVIDADE INDEX ------------------------------------------------------------------ */
+
+/* RESPONSIVIDADE LANCAMENTO ------------------------------------------------------------------ */
+
+/* RESPONSIVIDADE CONTATO ------------------------------------------------------------------ */
+
+/* RESPONSIVIDADE FOOTER ------------------------------------------------------------------ */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    .footer-copyright {
+        position: static;
+        transform: none;
+    }
+      .footer-img {
+        position: static;
+        width: 60px;
+        margin-top: 10px;
+    }
+    .footer-redes {
+        display: flex;
+        flex-direction: column;
+        padding: 2% 0 0 0;
+    }
+    .footer-redes-img {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 2%;
+    }
 }
