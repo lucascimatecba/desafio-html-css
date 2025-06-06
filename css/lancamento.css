@@ -24,6 +24,11 @@
 
   .tabela-comparacao tr:nth-child(even) {background-color: #f2f2f2;}
 
+  .botao-comparacao {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
 div#comparacao {
     position: absolute;
     display: none;
