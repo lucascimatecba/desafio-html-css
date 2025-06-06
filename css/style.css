@@ -129,7 +129,7 @@ html, body {
 .video-lancamento iframe {
     width: 100%;
     height: 90%;
-    height: 500px;
+    height: 900px;
     border: none;
     border-radius: 12px;
 }
